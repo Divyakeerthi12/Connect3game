@@ -159,14 +159,15 @@ public class Controller implements Initializable {
         List<Point2D> horizontalPoints = IntStream.rangeClosed(column - 3, column + 3)
                 .mapToObj(col -> new Point2D(row, col))
                 .collect(Collectors.toList());
-        Point2D startPoint1 = new Point2D(row - 3, column + 3);
-        List<Point2D> diagonal1Points = IntStream.rangeClosed(0, 6)
-                .mapToObj(i -> startPoint1.add(i, -i))
-                .collect(Collectors.toList());
-        Point2D startPoint2 = new Point2D(row - 3, column + 3);
-        List<Point2D> diagonal2Points = IntStream.rangeClosed(0, 6)
-                .mapToObj(i -> startPoint2.add(i, i))
-                .collect(Collectors.toList());
+
+        // Corrected diagonal points generation
+        List<Point2D> diagonal1Points = new ArrayList<>();
+        List<Point2D> diagonal2Points = new ArrayList<>();
+        for (int i = -3; i <= 3; i++) {
+            diagonal1Points.add(new Point2D(row + i, column + i));
+            diagonal2Points.add(new Point2D(row + i, column - i));
+        }
+
         boolean isEnded = checkCombinations(verticalPoints) || checkCombinations(horizontalPoints)
                 || checkCombinations(diagonal1Points) || checkCombinations(diagonal2Points);
         return isEnded;
