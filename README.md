@@ -7,4 +7,4 @@ Connect Three is a solved game. The first player can always win by playing the r
 
 IDE : IntelliJ 2017.1 Community
 
-Note:https:Connect3Game.jar--> This is a jar file. You can download and play the game.
+Note: Connect3Game.jar--> This is a jar file. You can download and play the game.
