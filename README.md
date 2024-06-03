@@ -6,3 +6,5 @@ The pieces fall straight down, occupying the next available space within the col
 Connect Three is a solved game. The first player can always win by playing the right moves.
 
 IDE : IntelliJ 2017.1 Community
+
+Note:https:Connect3Game.jar--> This is a jar file. You can download and play the game.
