@@ -5,4 +5,4 @@ The players first choose a color and then take turns dropping colored discs from
 The pieces fall straight down, occupying the next available space within the column. The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of three of one's own discs.
 Connect Three is a solved game. The first player can always win by playing the right moves.
 
-IDE : IntelliJ 2017 Community
+IDE : IntelliJ 2017.1 Community
